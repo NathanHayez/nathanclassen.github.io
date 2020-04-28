@@ -1,0 +1,416 @@
+/* ---------------------------------
+
+                general
+
+------------------------------------ */
+
+:root {
+  --bento-blue: #02576c;
+  --bento-darkgreen: #27a87f;
+  --bento-medgreen: #4dd599;
+  --bento-limegreen: #cff52a;
+  --bento-yellow: #ffee61;
+  --bento-darkgray: #495057;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* .dev {
+  border: 1px solid red;
+} */
+
+body {
+  background-color: var(--bento-darkgray);
+  color: #282828;
+  font-family: 'Baloo Tamma 2', "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.simple {
+  list-style: none;
+  text-decoration: none;
+}
+
+.softened {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+
+  /* border-radius: 5px; */
+}
+
+h3 {
+  font-size: 36px;
+  color: #555;
+  text-align: center;
+  height: 100px;
+  margin: 50px;
+}
+
+#bento-tag {
+  border-radius: 50px;
+  padding: 10px;
+  text-align: center;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+#bento-tag:hover {
+  background-color: var(--bento-limegreen);
+  cursor: pointer;
+}
+
+/* ---------------------------------
+
+                side
+
+------------------------------------ */
+
+
+
+    /* ---------------------------------
+
+                    images
+
+    ------------------------------------ */
+.img-wrapper {
+  height: 200px;
+  width: 200px;
+}
+
+.img-wrapper img {
+  height: 200px;
+  width: 150px;
+}
+
+.thumbnail img {
+  height: 100%;
+  width: 100%;
+}
+
+.small-icon {
+  font-size: 30px;
+}
+
+.small-icon:hover {
+  font-size: 40;
+  color: #50a;
+}
+
+.medium-icon {
+  font-size: 50px;
+}
+
+.medium-icon:hover {
+  color: #50a;
+}
+/* ---------------------------------
+
+                header
+
+------------------------------------ */
+header {
+  background: #ffffff;
+  padding: 50px 0 150px;
+  margin: 0 auto 5px;
+  width: 99%;
+}
+
+header p {
+  padding-left: 50px;
+  width: 30%;
+  margin: auto;
+}
+
+#container1 {
+  display: block;
+  margin: auto;
+  width: 500px;
+}
+
+#avatar {
+  display: inline-block;
+  position: relative;
+  left: 75px;
+  /* height: 350px; */
+  width: 350px;
+  margin: auto;
+}
+
+#avatar img {
+  display: inline-block;
+  border-radius: 20px;
+  width: 100%;
+}
+
+ul.header-links {
+  display: inline-block;
+  position: relative;
+  left: 100px;
+  bottom: 60px;
+  list-style: none;
+  width: 55px;
+}
+
+.l-nudge1 {
+  position: relative;
+  left: 5px;
+}
+
+.l-nudge2 {
+  position: relative;
+  left: 3px;
+}
+
+ul.header-links li {
+height: 50px;
+margin-bottom: 20px;
+width: 50px;
+}
+
+
+/* ---------------------------------
+
+                main
+
+------------------------------------ */
+
+main {
+  margin-bottom: 5px;
+}
+
+div.bento {
+  background: #fff;
+  /* color: var(--bento-blue); */
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0 auto 5px;
+  padding: 200px 50px;
+  overflow: hidden;
+  width: 99%;
+}
+
+.bento-wrap1 {
+  /* display: inline-block; */
+  float: left;
+  padding: 10px;
+  width: 50%;
+}
+
+.bento-wrap1 p {
+  margin: 10px;
+}
+
+div.bento-vid-wrap {
+  /* display: inline-block; */
+  float: left;
+  width: 50%;
+}
+
+div.bento video {
+width: 100%;
+}
+
+#to-case-study {
+  background: var(--bento-darkgreen);
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 50px;
+  height: 50px;
+  width: 150px;
+}
+
+div.projects-div {
+  margin: 50px 0;
+}
+
+div.project-list {
+  background: #fff;
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 99%;
+}
+
+#projects-div {
+  margin: auto;
+  width: 85%;
+}
+
+.thumbnail-item {
+  border-radius: 10px;
+  display: inline-block;
+  margin-left: 20px;
+  padding: 5px;
+  width: 400px;
+} 
+
+.thumbnail-item img {
+  margin: auto;
+}
+
+div.thumbnail {
+  padding: 0 5px 0;
+}
+
+ul.thumbnails {
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+}
+
+/* ---------------------------------
+
+                footer
+
+------------------------------------ */
+
+footer {
+  background: #fff;
+  margin: 0 auto 5px;
+  width: 99%;
+}
+
+footer h3{
+  margin: 0;
+}
+
+footer div {
+  padding: 20px;
+}
+
+#footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#footer-links li {
+  display: inline-block;
+}
+
+
+@media screen and (max-width: 1440px) {
+  header p {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header p {
+    width: 50%;
+  }
+  ul.thumbnails {
+    display: block;
+  }
+
+  .thumbnail-item {
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 20px;
+    padding: 5px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  header p {
+    padding: 0;
+    width: 70%;
+  }
+
+  div.bento {
+    padding: 100px 15px;
+  }
+
+  div.bento-wrap1 {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    position: static;
+    width: 100%;
+  }
+
+  div.bento-vid-wrap {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    position: static;
+    width: 100%;
+  }
+  /* header p {
+    width: 50%;
+  }
+  ul.thumbnails {
+    display: block;
+  }
+
+  .thumbnail-item {
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 20px;
+    padding: 5px;
+    width: 50%;
+  } */
+}
+
+@media screen and (max-width: 550px) {
+
+  #container1 {
+    width: 100%;
+  }
+
+  #avatar {
+    display: block;
+    margin: auto;
+    position: static;
+    width: 58%;
+  }
+
+  ul.header-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: static;
+    width: 58%;
+  }
+
+  ul.header-links li {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #footer-links {
+    width: 100%;
+  }
+  /* header p {
+    width: 50%;
+  }
+  ul.thumbnails {
+    display: block;
+  }
+
+  .thumbnail-item {
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 20px;
+    padding: 5px;
+    width: 50%;
+  } */
+}
